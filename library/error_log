@@ -1,0 +1,16 @@
+[02-Feb-2018 02:10:43 America/Chicago] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home1/grab123/library1.grabtechnology.com/db.php on line 2
+[02-Feb-2018 02:10:43 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home1/grab123/library1.grabtechnology.com/library_management.php on line 52
+[02-Feb-2018 02:10:43 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home1/grab123/library1.grabtechnology.com/library_management.php on line 53
+[02-Feb-2018 02:10:43 America/Chicago] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, boolean given in /home1/grab123/library1.grabtechnology.com/library_management.php on line 65
+[02-Feb-2018 02:12:20 America/Chicago] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'library1'@'localhost' (using password: YES) in /home1/grab123/library1.grabtechnology.com/db.php on line 2
+[02-Feb-2018 02:12:20 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home1/grab123/library1.grabtechnology.com/library_management.php on line 52
+[02-Feb-2018 02:12:20 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home1/grab123/library1.grabtechnology.com/library_management.php on line 53
+[02-Feb-2018 02:12:20 America/Chicago] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, boolean given in /home1/grab123/library1.grabtechnology.com/library_management.php on line 65
+[02-Feb-2018 02:14:21 America/Chicago] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'library1'@'localhost' (using password: YES) in /home1/grab123/library1.grabtechnology.com/db.php on line 2
+[02-Feb-2018 02:14:21 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home1/grab123/library1.grabtechnology.com/library_management.php on line 52
+[02-Feb-2018 02:14:21 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home1/grab123/library1.grabtechnology.com/library_management.php on line 53
+[02-Feb-2018 02:14:21 America/Chicago] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, boolean given in /home1/grab123/library1.grabtechnology.com/library_management.php on line 65
+[02-Feb-2018 02:16:07 America/Chicago] PHP Warning:  mysqli_connect(): (42000/1044): Access denied for user 'grab123_library1'@'localhost' to database 'grab123_library1_management' in /home1/grab123/library1.grabtechnology.com/db.php on line 2
+[02-Feb-2018 02:16:07 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home1/grab123/library1.grabtechnology.com/library_management.php on line 52
+[02-Feb-2018 02:16:07 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home1/grab123/library1.grabtechnology.com/library_management.php on line 53
+[02-Feb-2018 02:16:07 America/Chicago] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, boolean given in /home1/grab123/library1.grabtechnology.com/library_management.php on line 65

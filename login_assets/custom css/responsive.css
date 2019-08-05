@@ -1,0 +1,57 @@
+/** arrayform.com **/
+@media screen and (max-device-width:  979px), screen and (max-width:  979px) {
+    .container_12{width: 98%;}
+    .layout-1cols-ceneter{width: 98%;}
+}
+@media screen and (max-device-width:  767px), screen and (max-width:  767px) {
+    .popup-common{
+        position: absolute;
+        height: auto;
+    }
+    .popup-common .prefix_1{
+        padding: 0;
+    }
+    .login-form .box-white{
+        height: auto;
+    }
+    .popup-common .grid_6,
+    .popup-common .grid_4{
+        width: 81.333%;
+        padding-left: 8.333%;
+    }
+}
+@media screen and (max-device-width:  480px), screen and (max-width:  480px) {
+     .form .row-item .lbl{
+        display: block;
+        float: none;
+        width: auto;
+        text-align: left;
+        padding-bottom: 7px;
+    }
+    .form .row-item .val{
+        margin-left: 0;
+    }
+    .form.form-profile .txt{
+        width: 100%;
+    }
+    .form .row-item .btn{
+        margin-left: 0;
+        margin-top: 4px;
+    }
+    .box-post-comment .left-input,
+    .box-post-comment .right-input{
+        float: none;
+        width: auto;
+    }
+    .box-post-comment .btn-submit-comment{
+        width: 100px;
+    }
+    .lst-popular-project > .grid_3,
+    .popup-common .grid_6,
+    .popup-common .grid_4{
+        width: 98%;
+        padding-left: 0;
+    }
+}
+@media screen and (max-device-width:  320px), screen and (max-width:  320px) {
+}

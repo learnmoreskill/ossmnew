@@ -1,0 +1,130 @@
+@font-face{
+	  font-family:Basker-bold;
+	  src:url('font/BaskervaldADFStd-Bold.otf');
+}
+
+
+
+.vAlignM>tr>td,.vAlignM>tr>th,.vAlignM>tr>td{
+	    vertical-align: middle!important;
+	    padding: 0 5px;
+}
+/*.tableborder{
+	border: 2px solid #0b0b0c !important;
+	    border-color: black !important;
+}*/
+/*.tbodyborder>tr>td{
+	border: 2px solid #0b0b0c !important;
+}*/
+thead>tr>th, tbody>tr>td{
+	border: 2px solid #0b0b0c !important;
+}
+.divborder{
+	border: 2px solid #0b0b0c;
+}
+.textVertical{
+	writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+.divBorder{
+	border: 1px;
+	border-color: rgb(0,0,0);
+}
+.margincss{
+	margin:10px;
+	
+}
+.pageBreak{
+	page-break-after  : always;
+}
+.schoolHeader{
+	position: relative;
+}
+.logoContainer{
+	position: absolute;
+	margin: auto 0;
+	height: inherit;
+
+}
+.logo{
+	width:100px;
+	height:100px;
+	padding: 5px;
+}
+.logoSm{
+	width:80px;
+	height:80px;
+	padding: 5px;
+}
+.logokadam{
+	height: inherit;
+	width: auto;
+}
+.profilereport{
+	 width: 30% !important;
+}
+.signaturecontainer{
+	/*height:130px;*/
+	margin:0;
+}
+.schoolname{
+	overflow: hidden;
+    white-space: nowrap;
+   
+}
+.schoolkadam{
+	font-family: Basker-bold;
+    font-weight: 900!important;
+    font-size: 53px;
+}
+.divpadding{
+	padding:30px;
+}
+.marksheetcss{
+	position: absolute;
+	top: 0;right: 30px;
+	background-color: red;
+	color: #FFF
+}
+.rollmargin{
+	margin-top:70px;
+}
+.tablepadding{
+	padding: 20px;
+}
+.tableinlogo{
+
+}
+.backLogo{
+    background-image: url(img/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    height: 100px;
+    position: absolute;
+    width: 76%;
+    top: 37%;
+    opacity: 0.4;
+}
+.marksContainer{
+	height: 400px;
+}
+.marksContainer>td{
+	padding: 5px!important;
+}
+.marksContainer>td>p{
+	margin-bottom: 5px;
+}
+.tablewidth{
+	width:20px;
+}
+.imgkada{
+	  width:150px; height: 100px;position: absolute;
+}
+.bg-lightgreen{
+	background-color: #99ffbb;
+}
+
+
+
+

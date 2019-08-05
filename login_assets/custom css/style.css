@@ -1,0 +1,71 @@
+.error {color: #FF0000;}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 1px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/*card*/
+.card{
+    box-shadow: -1px -1px 19px 0px #ba947b;
+}
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 7px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    /*width: 100%;*/
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 8px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+    width: 15%;
+    
+}
+img.avatar2{
+    width: 10%;
+}
+/*guddu added*/
+.noMargin,.no-margin{
+    margin: 0;
+}
+.noPadding,.no-padding{
+    padding: 0;
+}
+.scrollContainerY{
+    height: 100%;
+    overflow-y: auto;
+}
+.sideBarScrollContainer{
+    overflow-y: auto;
+    height: calc(100% - 76px);
+    margin: 0;
+}
+.active{
+    background-color: red;
+}
+/*.sideBarScrollContainer>li>a{
+    padding: 20px 0!important;
+}*/
+/*end guddu added*/
+
+

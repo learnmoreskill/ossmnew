@@ -1,0 +1,1 @@
+{"year":2075,"nmonth":12,"date":24,"day":"Sunday","month":"Chaitra","num_day":1,"full":"2075-12-24","words":"Chaitra - 24, 2075, Sunday","weekStart":"2075-12-17","weekEnd":"2075-12-30","monthEnd":"2075-12-30","yearEnd":"2075-12-30","monthStartEn":"2019-3-15","monthEndEn":"2019-4-13","yearEndEn":"2019-4-13"}

@@ -1,0 +1,18 @@
+<?php
+require("account_management.php");
+$account = new account_management_classes();
+$school_details = json_decode($account->get_school_details_by_id());
+?>
+<header class="header black-bg" style="background: #252423;">
+              <div class="sidebar-toggle-box">
+                  <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+              </div>
+            <!--logo start-->
+            <a href="../index.php" class="logo"><b><?php echo $school_details->school_name; ?></b></a>
+            <!--logo end-->
+            <div class="top-menu">
+                <ul class="nav pull-right top-menu">
+                    <li><a class="logout" href="../logout.php">Logout</a></li>
+                </ul>
+            </div>
+</header>

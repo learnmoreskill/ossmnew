@@ -1,0 +1,1 @@
+{"year":2075,"nmonth":4,"date":9,"day":"Wednesday","month":"Shrawan","num_day":4,"full":"2075-4-9","words":"Shrawan - 9, 2075, Wednesday","weekStart":"2075-4-6","weekEnd":"2075-4-12","monthEnd":"2075-4-31","yearEnd":"2075-12-30","monthStartEn":"2018-7-17","monthEndEn":"2018-8-16","yearEndEn":"2019-4-13"}

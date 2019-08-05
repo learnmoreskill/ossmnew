@@ -1,0 +1,43 @@
+<html>
+   <head>
+      <title>JavaScript getMonth Method</title>
+       <script type="text/javascript">
+           dstr = "17 January, 2018";
+           alert('dstr = '+dstr);
+        var startDate = new Date ( "13 November, 2017" ); 
+            fyear = startDate.getFullYear(); alert(fyear);
+            fmonth = startDate.getUTCMonth() + 1; alert(fmonth);
+            fdate = startDate.getDate();          alert(fdate);
+           
+        var endDate = new Date ( dstr   ); 
+            syear = endDate.getFullYear(); alert(syear);
+            smonth = endDate.getUTCMonth() + 1; alert(smonth);
+            sdate = endDate.getDate();  alert(sdate);
+           
+        if( fyear > syear)
+            {
+                document.getElementById("sdate").value="";
+                document.getElementById("edate").value="";
+                alert('Please enter a proper range for date');
+            }
+           else if ( fmonth > smonth )
+               {
+                   document.getElementById("sdate").value="";
+                   document.getElementById("edate").value="";
+                   alert('Please enter a proper range for date');
+               }
+           else if ( fdate > sdate )
+               {
+                   document.getElementById("sdate").value="";
+                   document.getElementById("edate").value="";
+                   alert('Please enter a proper range for date');
+               }
+        </script>
+   </head>
+   
+   <body>
+    
+      
+      
+   </body>
+</html>

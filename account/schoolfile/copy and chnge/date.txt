@@ -1,0 +1,1 @@
+{"year":2075,"nmonth":3,"date":13,"day":"Wednesday","month":"Ashar","num_day":4,"full":"2075-3-13","words":"Ashar - 13, 2075, Wednesday","weekStart":"2075-3-10","weekEnd":"2075-3-16","monthEnd":"2075-3-32","yearEnd":"2075-12-30","monthStartEn":"2018-6-15","monthEndEn":"2018-7-16","yearEndEn":"2019-4-13"}

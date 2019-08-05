@@ -1,0 +1,70 @@
+/*buscss*/
+.imgheight{
+	width: 100%;
+	/*height: inherit;*/
+	margin-top: 2px;
+}
+.rowcss{
+	/*height:150px;*/
+	margin: 5px 20px !important;
+
+
+}
+.studentinfo{
+	overflow: hidden;
+	line-height: 1.5
+	/*margin:20px 20px 0px !important;*/
+	/*margin-left:20px !important;*/
+
+	/*padding:5px!important;*/
+
+}
+.studentinfo>p>span{
+		/*font-size: 20px;*/
+		font-weight: 500;
+		position: relative;
+}
+.studentinfo>p{
+	white-space: nowrap;
+	overflow: hidden;
+	margin: 0;
+}
+.mainbusdiv{
+	position: relative;
+	margin: 1px 10px 2px 10px;
+    border: 3px solid #101011!important;
+    margin: 20px
+}
+
+
+.letterspace{
+	 letter-spacing: 1 px;font-family: sans-serif;
+	 font-size: 16px;
+}
+.water{
+	color:lightgrey;
+    
+    -webkit-transform:rotate(335deg);
+        font-size: 35px;
+    margin: 57px 285!important;
+}
+/*.water>span{
+	color:lightgrey;
+    
+    -webkit-transform:rotate(335deg);
+        font-size: 50px;
+    margin: 57px 285;
+}*/
+#background{
+    position:absolute;
+    z-index:-1;
+    background:white;
+    display:block;
+    height:inherit; 
+    width:100%;
+    color:yellow;
+    top: 39%;
+}
+.pageBreak{
+	page-break-after  : always;
+}

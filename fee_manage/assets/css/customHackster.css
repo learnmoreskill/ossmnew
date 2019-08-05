@@ -1,0 +1,22 @@
+.studListSelection{
+	max-height: 400px;
+    overflow: auto;
+    position: absolute;
+    background: white;
+    color: black;
+}
+.stList{border-bottom:1px solid grey;padding:5px;margin: 0;font-size: 10px}
+.stList:hover {background: grey}
+.overflowScroll{
+	overflow: auto;
+}
+.clearIcon{
+	float: right;
+	margin-right: 32px;
+	width: 10px;
+	padding-left: 6px;
+	cursor: pointer;
+}
+.mainContentContainer{
+	padding-top: 60px;
+}

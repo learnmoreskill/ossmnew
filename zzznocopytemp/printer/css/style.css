@@ -1,0 +1,613 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+}
+
+.button-result{
+  background-color:#009688 !important;
+}
+
+.top-bar {
+  position: relative;
+  height: 50px;
+  padding: 15px 20px;
+  -webkit-box-shadow: 0px 2px 3px 0px rgba(50, 57, 64, 0.63);
+   -moz-box-shadow:    0px 2px 3px 0px rgba(50, 57, 64, 0.63);
+   box-shadow:         0px 2px 3px 0px rgba(50, 57, 64, 0.63);
+}
+
+.container-main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background:#ECECEC;
+}
+.container-main.-expanded > .sidebar {
+  margin-left: 0;
+}
+.container-main.-expanded > .content {
+  width: calc(100% - 250px);
+}
+.container-main.-collapsed > .sidebar {
+  margin-left: -250px;
+  
+}
+.container-main.-collapsed > .content {
+  width: 100%;
+}
+.sidebar{
+  height:100%;
+}
+.container-main > .sidebar,
+.container-main > .content {
+
+  float: left;
+  -webkit-transition: all 0.24s cubic-bezier(1, 0.335, 0.89, 0.825);
+  transition: all 0.24s cubic-bezier(1, 0.335, 0.89, 0.825);
+}
+.nav ul li{
+  list-style:none;
+}
+
+
+.nav-pills > li > a {
+    border-radius:0;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    color:#34495E;
+}
+
+.nav ul li a{
+color: #fff;
+}
+
+a.linker{
+  color: #fff;
+  font-size: 16px;
+
+}
+
+a.linker:hover{
+
+  color: #fff;
+  font-size: 16px;
+
+}
+
+
+.container-main > .sidebar {
+  width: 200px;
+  height: 100vh;
+  background:#34495E;
+}
+.container-main > .content {
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px;
+}
+.container-main > .content .heading {
+  margin: 0;
+  line-height: 1;
+  font-weight: 300;
+}
+
+.btn {
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  font-family: 'Montserrat', 'Source Sans Pro', sans-serif;
+  padding: 0 20px;
+  color: #505057;
+  background: #eee;
+  border: 0;
+  border-radius: 3px;
+}
+.btn:hover {
+  background: #e1e1e1;
+}
+.btn.-top {
+  margin-top: -6px;
+}
+.btn.-info {
+  color: #fff;
+  background: #0094ff;
+}
+.btn.-info:hover {
+  background: #0085e6;
+}
+
+.clearfix:after {
+  clear: both;
+}
+.clearfix .p-left {
+  float: left;
+}
+.clearfix .p-right {
+  float: right;
+}
+/*------------------------------
+ grid custom
+
+------------------------------*/
+
+/*
+* Default Bootstrap grid gutter is 30px, so I've added some custom gutters
+* It is now possible to make the grid more flexible for each device
+*/
+
+
+section.grid {
+  padding: 30px 0  0;
+}
+section.grid h1 {
+  margin-bottom: 50px;
+}
+section.grid p {
+  margin-bottom: 24px;
+  font-size:20px;
+  font:bold;
+}
+
+div.sample-row div.inner {
+  background: #EF5858;
+  border: 1px solid #eb3333;
+  color: white;
+  padding: 15px;
+  height: 150px;
+}
+
+div.inner i {
+  font-size: 50px;
+  margin-bottom:15px;
+}
+div.expanses{
+  background: #4DB6AC !important;
+  border-color:#4DB6AC !important;
+}
+
+div.events{
+background:#9575CD !important;
+border-color:#9575CD !important;
+}
+
+div.admission{
+  background:#F06292 !important;
+  border-color:#F06292 !important;
+}
+div.sample-row div.inner.logo {
+  padding: 50px 0;
+  min-height: 123px;
+}
+div.sample-row div.inner div.inner {
+  background: #eb3333;
+  border: 1px solid #e91b1b;
+}
+@media (min-width: 768px) {
+  div.sample-row div.inner {
+    background: #10a7a7;
+    border: 1px solid #14cccc;
+  }
+  div.sample-row div.inner div.inner {
+    background: #14cccc;
+    border: 1px solid #12b5b5;
+  }
+}
+@media (min-width: 992px) {
+  div.sample-row div.inner {
+    background: #ef8a58;
+    border: 1px solid #eb7033;
+  }
+  div.sample-row div.inner div.inner {
+    background: #eb7033;
+    border: 1px solid #e9601b;
+  }
+}
+@media (min-width: 1340px) {
+  div.sample-row div.inner {
+    background: #a73e3e;
+    border: 1px solid #a52424;
+  }
+  div.sample-row div.inner div.inner {
+    background: #a52424;
+    border: 1px solid #901f1f;
+  }
+}
+
+/*
+* Where the custom grid begins
+*/
+
+.gutter-xs-xs {
+  padding-left: 3px;
+  padding-right: 3px;
+
+}
+
+.gutter-margin-xs-xs {
+  margin-bottom: 6px;
+}
+
+.gutter-margin-xs-xs-up {
+  margin-top: 6px;
+}
+
+.row-xs-xs {
+  margin-left: -3px;
+  margin-right: -3px;
+}
+
+.gutter-xs-sm {
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+.gutter-margin-xs-sm {
+  margin-bottom: 18px;
+}
+
+.gutter-margin-xs-sm-up {
+  margin-top: 18px;
+}
+
+.row-xs-sm {
+  margin-left: -9px;
+  margin-right: -9px;
+}
+
+.gutter-xs-md {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.gutter-margin-xs-md {
+  margin-bottom: 30px;
+}
+
+.gutter-margin-xs-md-up {
+  margin-top: 30px;
+}
+
+.row-xs-md {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.gutter-xs-lg {
+  padding-left: 21px;
+  padding-right: 21px;
+}
+
+.gutter-margin-xs-lg {
+  margin-bottom: 42px;
+}
+
+.gutter-margin-xs-lg-up {
+  margin-top: 42px;
+}
+
+.row-xs-lg {
+  margin-left: -21px;
+  margin-right: -21px;
+}
+
+@media (min-width: 768px) {
+  .gutter-sm-xs {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .gutter-margin-sm-xs {
+    margin-bottom: 6px;
+  }
+
+  .gutter-margin-sm-xs-up {
+    margin-top: 6px;
+  }
+
+  .row-sm-xs {
+    margin-left: -3px;
+    margin-right: -3px;
+  }
+
+  .gutter-sm-sm {
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+
+  .gutter-margin-sm-sm {
+    margin-bottom: 18px;
+  }
+
+  .gutter-margin-sm-sm-up {
+    margin-top: 18px;
+  }
+
+  .row-sm-sm {
+    margin-left: -9px;
+    margin-right: -9px;
+  }
+
+  .gutter-sm-md {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .gutter-margin-sm-md {
+    margin-bottom: 30px;
+  }
+
+  .gutter-margin-sm-md-up {
+    margin-top: 30px;
+  }
+
+  .row-sm-md {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .gutter-sm-lg {
+    padding-left: 21px;
+    padding-right: 21px;
+  }
+
+  .gutter-margin-sm-lg {
+    margin-bottom: 42px;
+  }
+
+  .gutter-margin-sm-lg-up {
+    margin-top: 42px;
+  }
+
+  .row-sm-lg {
+    margin-left: -21px;
+    margin-right: -21px;
+  }
+}
+@media (min-width: 992px) {
+  .gutter-md-xs {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .gutter-margin-md-xs {
+    margin-bottom: 6px;
+  }
+
+  .gutter-margin-md-xs-up {
+    margin-top: 6px;
+  }
+
+  .row-md-xs {
+    margin-left: -3px;
+    margin-right: -3px;
+  }
+
+  .gutter-md-sm {
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+
+  .gutter-margin-md-sm {
+    margin-bottom: 18px;
+  }
+
+  .gutter-margin-md-sm-up {
+    margin-top: 18px;
+  }
+
+  .row-md-sm {
+    margin-left: -9px;
+    margin-right: -9px;
+  }
+
+  .gutter-md-md {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .gutter-margin-md-md {
+    margin-bottom: 30px;
+  }
+
+  .gutter-margin-md-md-up {
+    margin-top: 30px;
+  }
+
+  .row-md-md {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .gutter-md-lg {
+    padding-left: 21px;
+    padding-right: 21px;
+  }
+
+  .gutter-margin-md-lg {
+    margin-bottom: 42px;
+  }
+
+  .gutter-margin-md-lg-up {
+    margin-top: 42px;
+  }
+
+  .row-md-lg {
+    margin-left: -21px;
+    margin-right: -21px;
+  }
+}
+@media (min-width: 1340px) {
+  .gutter-lg-xs {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .gutter-margin-lg-xs {
+    margin-bottom: 6px;
+  }
+
+  .gutter-margin-lg-xs-up {
+    margin-top: 6px;
+  }
+
+  .row-lg-xs {
+    margin-left: -3px;
+    margin-right: -3px;
+  }
+
+  .gutter-lg-sm {
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+
+  .gutter-margin-lg-sm {
+    margin-bottom: 18px;
+  }
+
+  .gutter-margin-lg-sm-up {
+    margin-top: 18px;
+  }
+
+  .row-lg-sm {
+    margin-left: -9px;
+    margin-right: -9px;
+  }
+
+  .gutter-lg-md {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .gutter-margin-lg-md {
+    margin-bottom: 30px;
+  }
+
+  .gutter-margin-lg-md-up {
+    margin-top: 30px;
+  }
+
+  .row-lg-md {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .gutter-lg-lg {
+    padding-left: 21px;
+    padding-right: 21px;
+  }
+
+  .gutter-margin-lg-lg {
+    margin-bottom: 42px;
+  }
+
+  .gutter-margin-lg-lg-up {
+    margin-top: 42px;
+  }
+
+  .row-lg-lg {
+    margin-left: -21px;
+    margin-right: -21px;
+  }
+}
+
+.main-contents{
+  background:#fff;
+  height:300px;
+  
+}
+
+.container-expenses1{
+  position: relative;
+  width: 100%;
+  background:#fff;
+  padding-bottom:1%;
+}
+
+.container-expensestbl{
+  position: relative;
+  width: 100%;
+  margin-top:1%;
+  background:#fff;
+}
+
+.btn-edit{
+  background:rgb(46, 204, 113);
+  border-color:rgb(46, 204, 113);
+  color:#fff;
+}
+
+.btn-edit:hover{
+  color:rgb(46, 204, 113);
+}
+
+.btn-delete{
+  background:#dc3545;
+  border-color:#dc3545;
+  color:#fff;
+}
+
+.btn-delete:hover{
+  color:#dc3545;
+}
+
+.btn-collect{
+  background:#8e24aa;
+  border-color:#8e24aa;
+  color:#fff;
+}
+
+.btn-collect:hover{
+  color:#8e24aa;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover{
+    color:#007bff;
+   
+}
+[type="date"] {
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+.form-inline{
+  float: right;
+}
+
+.form-inline input[type=text]{
+  width:300px;
+}
+body
+{
+    counter-reset: Serial;           /* Set the Serial counter to 0 */
+}
+
+table
+{
+    border-collapse: separate;
+}
+
+tr td:first-child:before
+{
+  counter-increment: Serial;      /* Increment the Serial counter */
+  /* Display the counter */
+}
+

@@ -1,0 +1,288 @@
+.scrollable{
+  width: 100%;
+  overflow: scroll;
+}
+.namelength{
+      width: 85%;
+    white-space: nowrap;
+    overflow: hidden;
+    float: left;
+    text-overflow: ellipsis;
+    margin: 0;
+}
+.removemargindropdown{
+	margin: 0!important;
+  color: white!important;
+}
+.schoolnamemargin{
+	margin-left: 0px;
+}
+.capFirstAll{
+  text-transform: capitalize;
+}
+.capAll{
+  text-transform: uppercase;
+}
+.capFirst:first-letter {
+  text-transform: capitalize;
+}
+.navmenuleft{
+	left: 0!important;
+}
+.fullscreenBtn{
+  right: 3%!important;
+  top: 4px;
+  position: absolute;
+  color: white;
+  /*margin-right: -116px;*/
+}
+.fullscreenBtn:hover{
+  cursor: pointer;
+}
+.fullscreenBtn>i{
+  font-size: 45px;
+}
+.custom-logo{
+  height: 200px!important;
+  text-align: center;
+  display: flex;
+}
+.custom-logo>object{
+  height: auto!important;
+  /*border-radius: 50%;*/
+  max-height: 100%;
+  margin: auto;
+  width: 200px;
+  padding: 10px;
+}
+/*.custom-logo>a{
+  height: 100%!important;
+}*/
+.custom-brand-logo{
+    width: 200px;
+    border-radius: 50%;
+}
+.roundedImage{
+  border-radius: 25px;
+  overflow: hidden;
+}
+.sideMenuBack{
+  background: #001b3d!important;
+}
+.sideMenuColor{
+  color: white!important;
+}
+.galleryfontsize{
+  padding: none!important;
+  font-size: 16px!important;
+}
+/*.iconsize1 {
+    height: 250%!important;
+}*/
+ul.side-nav.fixed li a.active,ul.side-nav.fixed li a.active>i {
+    color: #ee6e73!important;
+}
+.resultStyle{
+    position: absolute;
+    background: #607d8b;
+    left: 0;
+    width: 100%;
+    padding: 0 10px;
+    z-index: 9;
+    overflow: auto;
+}
+.resultStyle>p{
+   color: white;
+}
+.resultStyle>p:hover{
+   background: white;
+   color: black;
+   cursor: pointer;
+}
+.spliter{
+  position: relative;
+  padding: 20px 0;
+}
+.spliter>h5{
+    width: max-content;
+    margin: auto;
+    background: white;
+    padding: 0 10px;
+}
+.spliter>hr{
+    position: absolute;
+    top: 34px;
+    width: 95%;
+    z-index: -1;
+    margin: 0 40px;
+}
+.ccimage{
+  margin: 20px auto 0;
+  border: 1px solid black;
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  display: flex;
+  overflow: hidden;
+}
+.ccimage>*{
+  margin: auto !important;
+}
+.cBtn{
+  line-height: 45px!important;
+  height: 45px!important;
+}
+@media only screen and (max-width: 500px){
+  .schoolnamemargin{
+    margin-left: 55px;
+  }
+}
+@media only screen and (max-width: 500px){
+  #my_camera>img{
+    width: 130px!important;
+    height: 130px!important;
+  }
+   #results>img{
+    padding: 0 0 5px 0!important;
+    height: 100%!important;
+    width: 100%!important;
+    margin: 0!important;
+  }
+  #results,#my_camera{
+     width: 130px!important;
+    height: 137px!important;
+  }
+  #my_camera>video{
+    width: 100%!important;
+    height: 100%!important;
+  }
+}
+.disable_login_button{
+  vertical-align: bottom;
+  background: transparent;
+  outline: none;
+  border: 0px;
+}
+.cPadding{
+  padding: 10px!important;
+}
+.cPaddingLR,.cPaddingRL{
+  padding: 0 10px!important;
+}
+.cPaddingTB,.cPaddingBT{
+  padding: 10px 0!important;
+}
+
+.customSelectDrop>.dropdown-content{
+  z-index: 99;
+  max-height: 300px;
+}
+
+main{
+  position: relative;
+}
+
+#overlayloading {
+  background-color: rgba(0, 0, 0, 0.6);z-index: 999;position: fixed;left: 0;top: 0;width: 100%;height: 100%;display: none;
+}
+#overlayloading div {
+  position:absolute;left:50%;top:50%;margin-top:-32px;margin-left:-32px;
+}
+/*card image*/
+.customCardImage{
+  max-width: 300px;
+  max-height: 300px;
+  margin: auto;
+}
+.customCardImage>img{
+  max-width: 100%;
+  max-height: inherit;
+  margin: auto;
+}
+#index-banner{
+  position: relative;
+}
+.galImages{
+  /*height: 200px;*/
+}
+.galImages>.col{
+  height: 300px;
+  /*min-height: 200px;*/
+}
+.gaImageCard{
+  position: relative;
+      padding: 0;
+    margin: 20px 0 0 0!important;
+    height: inherit;
+}
+.gaImageCard>figure,.gaImageCard>figure>div,.gaImageCard>figure>div>img{
+  margin: 0;
+  /*height: 100%;*/
+
+}
+.gaImageCardDel{
+      background: #08080859;
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 10px 5px;
+}
+#card-lists{
+  font-family: arial;
+  /*width: 100%;*/
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 10px;
+  /*.card{
+    width: 19.7368%;
+    border: 1px solid #ccc;
+    display: flex;
+    margin-left: 1.75438%;
+    overflow: hidden;
+    
+    &:first-child{
+      margin-left: 0;
+    }
+    figure{
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      display: block;
+      img{
+        width: 100%;
+        height: auto;
+      }
+     
+
+    }
+    
+  }  */
+
+}
+#card-lists>.col{
+  padding: 0;
+  /*margin: 5px;*/
+}
+ul.side-nav.fixed li a,ul.side-nav.fixed ul.collapsible-accordion a.collapsible-header{
+  padding: 0 30px 0 0 ;
+}
+ul.side-nav.fixed ul.collapsible-accordion .collapsible-body li a{
+      padding: 0 10px 0 16px;
+}
+.menuSubIcon{
+  color: white!important;
+  width: 15px!important;
+  font-size: 17px!important;
+}
+.navMenuIcon{
+  margin: 0 5px!important;
+}
+main{
+  /*width: 100vw;*/
+  width: 100%;
+}
+.selected_session_year_Container>.select-wrapper>ul{
+    min-width: 135px;
+    max-height: 400px;
+}

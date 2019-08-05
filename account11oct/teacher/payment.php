@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<?php
+require('../head.php');
+require('../header.php');
+require('../nepaliDate.php');
+?>
+
+<!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/colreorder/1.4.1/css/colReorder.dataTables.min.css"> -->
+<?php
+include('../session.php');
+$teacher_details = json_decode($account->get_teacher_details());
+?>
+
+<body>
+
+<?php include("../config/navbar.php"); ?>
+
+    <section id="main-content">
+        <section class="wrapper">
+            <div class="table-agile-info" id='load_edit_teacher_record'>
+                <div class="panel panel-default">
+                    <div class="panel-heading" >
+                      Teacher Account Record Details
+                    </div>
+                    <div class="table-responsive" style='padding: 10px;'>
+                        <table id='teacherDetailsTable' class="table table-striped b-t b-light">
+                            <thead>
+                                <tr>
+                                    <th>S.N.</th>
+                                    <th>Teacher Name</th>
+                                    <th>Address</th>
+                                    <th>Balance</th>
+                                    <th>Withdraw</th>
+                                    <th>Advance</th>
+                                    <th>Date</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                $sn=0;
+                                foreach($teacher_details as $row) {
+                                  $sn++;
+                                  $account_details = json_decode($account->get_teacher_account_details_by_teacher_account_id($row->tid));
+                                  $current_balance = $account_details->current_balance;
+                                  $total_withdrawal = $account_details->total_withdrawal;
+                                  $withdrawal_date = $account_details->withdrawal_date;
+                                  $advance = json_decode($account->get_teacher_advance_by_teacher_id_status($row->tid));
+                                  $total_advance = 0;
+                                  foreach ($advance as $key) 
+                                  {
+                                    $advance = $key->advance;
+                                    $total_advance = $total_advance + $advance;
+                                  }
+
+                                    
+                                    echo "<tr>
+                                      <td>".$sn."</td>
+                                      <td>".$row->tname."</td>
+                                      <td>". $row->taddress."</td>
+                                      <td>".$current_balance."</td>
+                                      <td>".$total_withdrawal."</td>
+                                      <td>".$total_advance."</td>
+                                      <td style='width:90px;'>".$withdrawal_date."</td>
+                                       <td style='width:250px;'>
+                                        <a class='btn btn-sm advanceItem' style='background-color: #4dd0e1; color:#fff;' href='#viewAdvanceModel' data-toggle='modal' data-whatever='".$row->tid."'><i class='glyphicon glyphicon-eye-open'></i>Advance</a>
+
+                                        <a class='btn btn-sm ItemID' style='background-color:#58d68d; color:#fff;' href='#viewModal' data-toggle='modal' data-whatever='".$row->tid."'><i class='glyphicon glyphicon-eye-open'></i> Pay Me</a>
+
+                                         <a class='btn btn-sm ItemID' style='background-color:#fe821d; color:#fff;' href='../teacher/statement.php?id=".$row->tid."' ><i class='glyphicon glyphicon-eye-open'></i> View</a>
+                                        
+                                       </td>
+                                    </tr>";
+                                }
+                                ?>
+
+                                
+                            </tbody>
+                        </table>
+                    
+                </div>
+            </div>
+        </section>
+    </section>
+
+</section>
+<div id="viewModal" class="modal fade" aria-hidden="true" tabindex="-1" role="dialog" aria-labelledby="viewModalLabel">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+        </div>
+    </div>
+</div>
+
+
+<div id="viewAdvanceModel" class="modal fade" aria-hidden="true" tabindex="-1" role="dialog" aria-labelledby="viewModalLabel">
+    <div class="modal-dialog" style="width:30%;">
+        <div class="modal-content-advance" style='background-color: #fff;border-radius: 10px;'>
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function() 
+    {
+        $('#teacherDetailsTable').DataTable();
+    });
+</script>
+
+
+ <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/jquery-1.8.3.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script class="include" type="text/javascript" src="../assets/js/jquery.dcjqaccordion.2.7.js"></script>
+    <script src="../assets/js/jquery.scrollTo.min.js"></script>
+    <script src="../assets/js/jquery.sparkline.js"></script>
+    <script src="../assets/js/common-scripts.js"></script>
+    <script type="text/javascript" src="../assets/js/gritter/js/jquery.gritter.js"></script>
+    <script type="text/javascript" src="../assets/js/gritter-conf.js"></script>
+    <script src="../assets/js/sparkline-chart.js"></script>    
+    <script src="../assets/js/zabuto_calendar.js"></script>    
+<script type="text/javascript">
+$(document).ready(function()
+{
+
+   $('.ItemID').click(function(){
+        var ItemID=$(this).attr('data-whatever');
+        $.ajax({url:"../teacher/payment_model.php?edit_id="+ItemID,cache:false,success:function(result){
+            $(".modal-content").html(result);
+        }});
+    });
+
+
+
+
+     $('.advanceItem').click(function(){
+        var ItemID=$(this).attr('data-whatever');
+        $.ajax({url:"../teacher/advance_model.php?edit_id="+ItemID,cache:false,success:function(result){
+            $(".modal-content-advance").html(result);
+        }});
+    });
+});
+</script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/colreorder/1.4.1/js/dataTables.colReorder.min.js"></script>
+ <script>
+  //loadScript();
+ </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+{"year":2018,"month":"June","nmonth":6,"nday":24,"day":"Tuesday","weekStart":"2018-06-22","weekEnd":"2018-06-28","monthEnd":"31","full":"2018-6-24","words":"24th June, 2018, Tuesday","HTML":"24 <sup>th<\/sup> - June, 2018, Tuesday"}
